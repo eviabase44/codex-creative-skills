@@ -34,6 +34,6 @@ Do not reproduce text overlays, product advertisements, compression artifacts, i
 
 ## Review and maintain
 
-The canonical local gallery is `library/index.html`. Double-click `library/Open Review.command` for a local review server that saves Keep, Reject and notes directly to `library/review-state.json`. The server binds to this computer's loopback interface. Directly opening the HTML also works, but those decisions live only in that browser until exported and imported.
+The canonical local gallery is `library/index.html`. From this location sub-skill's folder, run `python3 library/launch_review.py --open` (Windows: `py -3 library/launch_review.py --open`) for a local review server that saves Keep, Reject and notes directly to `library/review-state.json`. Use this Python command after ZIP-based installation, which may not preserve executable permissions on the optional macOS `Open Review.command` launcher. The server binds to this computer's loopback interface. Directly opening the HTML also works, but those decisions live only in that browser until exported and imported.
 
 When the user supplies an exported decision file, use `scripts/references.py --import-decisions /absolute/path/to/location-bible-decisions.json`. This validates keys and statuses before updating the canonical state. Keep the source URLs and exclusion record when maintaining the library. Do not add these images to the existing LoRA or claim new weights were trained or loaded.
