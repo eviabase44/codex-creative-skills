@@ -1,0 +1,1 @@
+posterizeTime(2);Math.floor(time * 2) * 60;

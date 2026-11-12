@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "event_id": "test-evergreen-builder-001",
+  "mode": "dry_run",
+  "simulated": true,
+  "post_media_version": 1,
+  "post_media_creative_profile": "base44-post-media-2026-10-04",
+  "variation_id": "reference-skill-test-a",
+  "topic": "An evergreen Base44 builder post about describing an app idea in your own words. Typography-led design with one small editorial portrait.",
+  "platform": "linkedin",
+  "placement": "organic_single_photo",
+  "kind": "image",
+  "width": 1200,
+  "height": 675,
+  "post_media_caption": "Your idea becomes an app. Describe what you have in mind, in your own words.",
+  "on_image_copy": ["Your idea", "becomes", "an app"],
+  "first_reply": "",
+  "attribution": "",
+  "allow_on_image_rewrite": false,
+  "proofs": [],
+  "asset_refs": [],
+  "test_notice": "Simulated trigger for design validation only. Not a live app event or publication-approved copy."
+}

@@ -1,0 +1,2 @@
+function c(n){return effect(n)(1);}
+var s=Math.max(0,Math.round(c("Stagger (frames)"))); var end=0; for(var i=0;i<3;i++){end=Math.max(end,i*s+Math.max(0,Math.round(c("W0"+(i+1)+" Delay (frames)"))));} end+4*c("[OUT] Enter Step (frames)");

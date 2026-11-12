@@ -1,0 +1,6 @@
+interface:
+  display_name: "Image Bible"
+  short_description: "Copy character and location references, then remix"
+  default_prompt: "Use $image-bible to select a relevant character reference and location reference, copy their visual construction, then remix the character and exactly five location elements for this story."
+policy:
+  allow_implicit_invocation: true

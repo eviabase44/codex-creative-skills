@@ -1,0 +1,78 @@
+var S = thisComp.layer("[SRC] Text").text.sourceText;
+var T = S.replace(/\r\n/g, "\r")
+         .replace(/[\u200B\u200C\u200D\uFEFF]/g, "")
+         .replace(/[\r\n\u0003\u000B\u2028\u2029\f]/g, " \u0001 ");
+var RAW = T.replace(/^\s+|\s+$/g, "").split(/\s+/);
+
+var W = [], BRK = [], WOF = [];
+for (var si = 0; si < RAW.length; si++) {
+  if (RAW[si] === "\u0001") {
+    WOF[si] = -1;
+    if (W.length && (!BRK.length || BRK[BRK.length - 1] !== W.length)) BRK.push(W.length);
+  } else if (RAW[si] !== "") {
+    WOF[si] = W.length; W.push(RAW[si]);
+  } else { WOF[si] = -1; }
+}
+while (BRK.length && BRK[BRK.length - 1] >= W.length) BRK.pop();
+var NW = Math.max(W.length, 1);
+
+var C = thisComp.layer("[CTRL] Master");
+function ctl(n) { return C.effect(n)("Slider"); }
+function pnt(n) { return C.effect(n)("Point"); }
+function chk(n) { return C.effect(n)("Checkbox"); }
+
+// Size and leading come from the CONTROL surface, not from any
+// layer. Sixteen probes and the stage all have to agree about the
+// type, and the only way to guarantee that is for none of them to
+// own it. The baked values are fallbacks for a comp whose [CTRL]
+// went missing.
+function fsz() {
+  var v = 0;
+  try { v = ctl("Font Size"); } catch (e) { v = 0; }
+  return (v > 0) ? v : 90;
+}
+
+// Derived, not read off the paragraph. Reading the paragraph would
+// leave the rows at the old spacing the moment the size changed —
+// the same bug one level down.
+// Thousandths of an em, AE's own unit. 0 is the font metrics.
+function trk() {
+  var v = 0;
+  try { v = ctl("Tracking"); } catch (e) { v = 0; }
+  return (v === null) ? 0 : v;
+}
+
+function lead() {
+  var f = 0;
+  try { f = ctl("Lead Factor"); } catch (e) { f = 0; }
+  if (!(f > 0)) f = 1.1;
+  return fsz() * f;
+}
+var i = 2;
+var OUT = (i < W.length) ? W[i] : "";
+
+var __res = null;
+try {
+  var __st = text.sourceText.style;
+  // FAMILY is mirrored off [SRC] Text, because a typeface name
+  // cannot be a slider. [SRC] is inert - no expressions, no
+  // animators - so reading its style is free. Mirroring off the
+  // STAGE is what made v04 slow: the stage carries eleven
+  // animators, two of which solved once per text unit, so every
+  // probe measurement dragged the whole stack in transitively.
+  try {
+    var __src = thisComp.layer("[SRC] Text").text.sourceText.style;
+    try { __st = __st.setFont(__src.font); } catch (e) {}
+  } catch (e) {}
+
+  // TRACKING is a control, not a layer property. It changes row
+  // widths, so the probes and the stage have to agree about it -
+  // and the way to guarantee that is for neither of them to own it.
+  try { __st = __st.setTracking(trk()); } catch (e) {}
+  try { __st = __st.setAutoLeading(false); } catch (e) {}
+  __st = __st.setFontSize(fsz());
+  try { __st = __st.setLeading(lead()); } catch (e) {}
+  __res = __st.setText(OUT);
+} catch (e) { __res = null; }
+
+__res !== null ? __res : OUT;

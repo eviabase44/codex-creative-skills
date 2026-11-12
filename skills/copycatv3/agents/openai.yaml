@@ -1,0 +1,6 @@
+interface:
+  display_name: "Copycatv3"
+  short_description: "Design in Figma and recreate measured reference motion"
+  default_prompt: "Use $copycatv3 to find Base44 references, redesign shot endpoints in Figma, learn and validate their motion with Motion Study, animate in Codex at 12 fps, and show side-by-side comparisons for my approval."
+policy:
+  allow_implicit_invocation: true

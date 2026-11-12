@@ -1,0 +1,1 @@
+SUCCESS: 36 file-backed footage items resolve inside approved/media. Remaining external or missing: 0

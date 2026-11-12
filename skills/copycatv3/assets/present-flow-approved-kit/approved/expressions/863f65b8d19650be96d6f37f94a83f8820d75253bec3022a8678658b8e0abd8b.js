@@ -1,0 +1,1 @@
+thisComp.layer("[CTRL] Ghost").effect("Opacity %")("Slider");

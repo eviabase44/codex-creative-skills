@@ -1,0 +1,26 @@
+{
+  "rulecheck.js": {
+    "summary": "TOTAL  14 passed \u00b7 0 failed",
+    "scope": "Legacy fake-AE or source checks, not approved AEP validation"
+  },
+  "buildtest.js": {
+    "summary": "TOTAL  111 passed \u00b7 0 failed",
+    "scope": "Legacy fake-AE or source checks, not approved AEP validation"
+  },
+  "lint.js": {
+    "summary": "84 passed \u00b7 0 failed",
+    "scope": "Legacy fake-AE or source checks, not approved AEP validation"
+  },
+  "revealtest.js": {
+    "summary": "178 passed, 0 failed",
+    "scope": "Legacy fake-AE or source checks, not approved AEP validation"
+  },
+  "objecttest.js": {
+    "summary": "64 passed, 0 failed",
+    "scope": "Legacy fake-AE or source checks, not approved AEP validation"
+  },
+  "reveallint.js": {
+    "summary": "210 passed, 0 failed",
+    "scope": "Legacy fake-AE or source checks, not approved AEP validation"
+  }
+}

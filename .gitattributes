@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve the exact bytes and original line endings of hashed native evidence.
+skills/copycatv3/assets/present-flow-approved-kit/approved/** -text -whitespace

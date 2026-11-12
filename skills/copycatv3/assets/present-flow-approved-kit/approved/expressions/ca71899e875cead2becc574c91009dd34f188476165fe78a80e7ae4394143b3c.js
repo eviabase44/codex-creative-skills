@@ -1,0 +1,1 @@
+thisComp.layer("[SRC] W03 turn").text.sourceText;

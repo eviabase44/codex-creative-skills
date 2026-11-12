@@ -1,0 +1,55 @@
+[
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w08",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 207 in property ‘Position’ of layer 4 (‘[ORG] w08’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w07",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 189 in property ‘Position’ of layer 5 (‘[ORG] w07’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w06",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 189 in property ‘Position’ of layer 6 (‘[ORG] w06’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w05",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 207 in property ‘Position’ of layer 7 (‘[ORG] w05’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w04",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 207 in property ‘Position’ of layer 8 (‘[ORG] w04’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w03",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 189 in property ‘Position’ of layer 9 (‘[ORG] w03’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w02",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 207 in property ‘Position’ of layer 10 (‘[ORG] w02’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Base44_Templates_01_Title_Only_v01 2",
+    "layer": "[ORG] w01",
+    "property": "Position",
+    "error": "Expression Disabled\nError at line 207 in property ‘Position’ of layer 11 (‘[ORG] w01’) in comp ‘Base44_Templates_01_Title_Only_v01 2’. \rTypeError: offsetAuthored is not a function\n\n\tvar l = layoutOf(i);\n▶\tvar a = offsetAuthored(i);\n\t[h[0] + l[0] + a[0], h[1] + l[1] + a[1]];"
+  },
+  {
+    "comp": "Title_on_BG_02",
+    "layer": "Opening 2",
+    "error": "Extraction: TypeError: undefined is not an object"
+  }
+]

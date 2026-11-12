@@ -1,0 +1,1 @@
+thisComp.layer("[SRC] W01 Now’s").text.sourceText;

@@ -1,0 +1,1 @@
+thisComp.layer("[CTRL] SH22 Design").effect("Label Color")(1);

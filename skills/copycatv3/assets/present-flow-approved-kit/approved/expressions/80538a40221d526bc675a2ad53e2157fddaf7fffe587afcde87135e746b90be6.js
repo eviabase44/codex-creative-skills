@@ -1,0 +1,1 @@
+thisComp.layer("[SRC] W02 your").text.sourceText;

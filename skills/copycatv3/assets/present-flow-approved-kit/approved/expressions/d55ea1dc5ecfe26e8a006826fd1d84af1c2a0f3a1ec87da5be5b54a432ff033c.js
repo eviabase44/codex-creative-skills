@@ -1,0 +1,21 @@
+var S = thisComp.layer("[SRC] Text").text.sourceText;
+var T = S.replace(/\r\n/g, "\r")
+         .replace(/[\u200B\u200C\u200D\uFEFF]/g, "")
+         .replace(/[\r\n\u0003\u000B\u2028\u2029\f]/g, " \u0001 ");
+var RAW = T.replace(/^\s+|\s+$/g, "").split(/\s+/);
+
+var W = [], BRK = [];
+for (var si = 0; si < RAW.length; si++) {
+  if (RAW[si] === "\u0001") {
+    if (W.length && (!BRK.length || BRK[BRK.length - 1] !== W.length)) BRK.push(W.length);
+  } else if (RAW[si] !== "") W.push(RAW[si]);
+}
+while (BRK.length && BRK[BRK.length - 1] >= W.length) BRK.pop();
+
+function lead() {
+  var L = 0;
+  try { L = thisComp.layer("[TXT] Title").text.sourceText.style.leading; } catch (e) { L = 0; }
+  return (L > 0) ? L : 90 * 1.1;
+}
+var i = 6;
+i < W.length ? W[i] : "";

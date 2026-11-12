@@ -1,0 +1,2 @@
+function c(n){return effect(n)(1);}
+var d=c("Duration (frames; 0=native)"); if(d<=0)d=c("[OUT] Total (frames)"); var f=Math.floor(time/thisComp.frameDuration+0.00001); clamp((f-Math.max(0,c("Start (frames)")))/Math.max(1,d)*100,0,100);

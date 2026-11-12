@@ -1,0 +1,6 @@
+interface:
+  display_name: "Image Copycat"
+  short_description: "Adapt approved Base44 designs to app-triggered posts"
+  default_prompt: "Use $image-copycat to turn this Marketing OS trigger into a platform-ready post using the nine Base44 videos first, preserving the selected design and caption."
+policy:
+  allow_implicit_invocation: true

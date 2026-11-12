@@ -1,0 +1,1 @@
+clamp(thisComp.layer("[CTRL] SH22 Design").effect("Texture Strength (%)")(1),0,100);
